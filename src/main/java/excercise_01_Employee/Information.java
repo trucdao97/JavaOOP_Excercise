@@ -1,4 +1,4 @@
-package excercise_01;
+package excercise_01_Employee;
 
 public class Information {
     public static void main(String[] args) {

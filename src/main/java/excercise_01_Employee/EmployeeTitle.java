@@ -1,4 +1,4 @@
-package excercise_01;
+package excercise_01_Employee;
 
 public class EmployeeTitle {
     String employeeNameTitle;
@@ -6,6 +6,9 @@ public class EmployeeTitle {
     String employeeAddressTitle;
     String employeeDoBTitle;
     String employeeDepartmentTitle;
+    String employeePhoneTitle;
+    String employeeGenderTitle;
+    String employeeAgeTitle;
 
     public EmployeeTitle(){
         employeeNameTitle = "Tên Nhân Viên";
@@ -13,6 +16,9 @@ public class EmployeeTitle {
         employeeAddressTitle = "Địa chỉ";
         employeeDoBTitle = "Năm sinh";
         employeeDepartmentTitle = "Phòng ban";
+        employeePhoneTitle = "Số điện thoại";
+        employeeGenderTitle = "Giới tính";
+        employeeAgeTitle = "Số tuổi";
     }
 
     public String getEmployeeNameTitle() {
@@ -33,5 +39,17 @@ public class EmployeeTitle {
 
     public String getEmployeeDepartmentTitle() {
         return employeeDepartmentTitle;
+    }
+
+    public String getEmployeePhoneTitle() {
+        return employeePhoneTitle;
+    }
+
+    public String getEmployeeGenderTitle() {
+        return employeeGenderTitle;
+    }
+
+    public String getEmployeeAgeTitle() {
+        return employeeAgeTitle;
     }
 }
