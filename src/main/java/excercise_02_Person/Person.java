@@ -1,13 +1,15 @@
 package excercise_02_Person;
 
+import excercise_01_Employee.EmployeeTitle;
+
 public class Person {
     String name;
     int age;
-    String gender;
+    Gender gender;
     String address;
     String phone;
 
-    public Person(String name, int age, String gender, String address, String phone){
+    public Person(String name, int age, Gender gender, String address, String phone) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -15,18 +17,29 @@ public class Person {
         this.phone = phone;
     }
 
-    public String genderDefine(){
-        if (gender.equals("M")){
-            return ("Male");
-        } else if (gender.equals("F")){
-            return ("Female");
-        } else {
-            return ("Other");
+    public String genderDefine() {
+        switch (gender) {
+            case FEMALE: {
+                return "Nữ";
+            }
+            case MALE: {
+                return "Nam";
+            }
+            default: {
+                return "Khác";
+            }
         }
     }
 
     public Person() {
 
+    }
+
+    public void personInfo(){
+        EmployeeTitle employeeTitle = new EmployeeTitle();
+        System.out.println(employeeTitle.getEmployeeNameTitle() + ": " + name);
+        System.out.println(employeeTitle.getEmployeeAgeTitle() + ": " + age);
+        System.out.println(employeeTitle.getEmployeeGenderTitle() + ": " + genderDefine());
     }
 
     public String getName() {
@@ -37,7 +50,7 @@ public class Person {
         return age;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
