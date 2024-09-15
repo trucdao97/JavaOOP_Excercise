@@ -1,0 +1,12 @@
+package excercise_03_Common;
+
+public enum Buttons {
+    LOG_IN_BUTTON,
+    ADD_NEW_CATEGORY_BUTTON,
+    BANNER_BROWSER_BUTTON,
+
+    BANNER_ADD_FILES_BUTTON,
+    ICON_BROWSER_BUTTON,
+    ICON_ADD_FILES_BUTTON,
+    SAVE_BUTTON
+}
